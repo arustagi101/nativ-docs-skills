@@ -1,0 +1,12 @@
+interface:
+  display_name: "Nativ Docs"
+  short_description: "Write Markdown and HTML documents for Nativ"
+  default_prompt: "Use $nativ-docs to write or revise a document for Nativ."
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "nativ-docs"
+      description: "Read, upload, and revise Nativ documents and comment threads"
+      transport: "streamable_http"
+      url: "https://mcp.nativdocs.co/mcp"
